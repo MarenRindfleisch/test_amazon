@@ -1,0 +1,113 @@
+{
+  "id": "295dfdca-547e-4756-bcd8-ef13a0c0957d",
+  "version": "2.0",
+  "name": "amazon_test.py",
+  "url": "https://www.amazon.de",
+  "tests": [{
+    "id": "82a39d74-fc95-4a6b-b214-4b2edf5865b3",
+    "name": "Untitled",
+    "commands": [{
+      "id": "09ef2401-9d5b-403c-82d7-ecd155a2ad94",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6387dbab-d256-4ae2-825d-d53949127796",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x855",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f166d2f-2066-46bb-a676-085dc6d1ebd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "adidas schuhe"
+    }, {
+      "id": "32f7bd74-4428-4f1e-b43a-7c8de01d9709",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b1c3e7eb-d93f-4a0f-9bf5-37b17ffc4099",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed37b8a7-8bc2-4138-abc9-1dece34035c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-cart-icon",
+      "targets": [
+        ["css=.nav-cart-icon", "css:finder"],
+        ["xpath=//div[@id='nav-cart-count-container']/span[2]", "xpath:idRelative"],
+        ["xpath=//a[5]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd739489-3ef8-46d4-84d5-0c30a6287952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-section > .a-unordered-list",
+      "targets": [
+        ["css=.a-section > .a-unordered-list", "css:finder"],
+        ["xpath=//div[@id='CardInstanceNPSP1InlwTHWtX_GE3VtEQ']/div/div/div/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a291342-21e5-4164-83eb-6e1b5a662f66",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-link-accountList-nav-line-1",
+      "targets": [
+        ["id=nav-link-accountList-nav-line-1", "id"],
+        ["css=#nav-link-accountList-nav-line-1", "css:finder"],
+        ["xpath=//span[@id='nav-link-accountList-nav-line-1']", "xpath:attributes"],
+        ["xpath=//a[@id='nav-link-accountList']/div/span", "xpath:idRelative"],
+        ["xpath=//a[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hallo, Maren')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a99d772d-3a5e-4e5f-9672-abddbc6c614f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["82a39d74-fc95-4a6b-b214-4b2edf5865b3"]
+  }],
+  "urls": ["https://www.amazon.de/"],
+  "plugins": []
+}
